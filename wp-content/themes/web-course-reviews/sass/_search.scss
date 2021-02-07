@@ -1,0 +1,106 @@
+body.search {
+    background-color: $offWhite;
+}
+
+.search-header {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 15px;
+    position: relative;
+    .page-title {
+        @media only screen and (max-width: 800px) {
+            font-size: 1.2rem;
+            text-align: center;
+           }
+        span {
+            color: $wine;
+            font-size: 2.5rem;
+            @media only screen and (max-width: 800px) {
+               font-size: 1.2rem;
+              }
+        }
+    }
+    &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-repeat: repeat-x;
+    background-size: 5px 1px;
+    background-image: radial-gradient(circle, $wine 0.5px, transparent 0.5px);
+    width: 100%;
+    height: 5px;
+    }
+}
+
+.search-results-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 800px) {
+        margin: 0 2rem;
+       }
+    &__single {
+        &__big {
+            width: 50%;
+            display: flex;
+            @media only screen and (max-width: 800px) {
+               width: 100%;
+              }
+            figure {
+                width: 60%;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+            &__text {
+                width: 40%;
+                padding: 0 0.7rem;
+                h1 {
+                    font-size: 1.3rem;
+                    cursor: pointer;
+                    &:hover {
+                        transition: 300ms;
+                        color: $wine;
+                    }
+                }
+            }
+        }
+        &__small {
+            width: 24%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.5rem;
+            border-bottom: 1.5px solid $wine;
+            @media only screen and (max-width: 800px) {
+                width: 100%;
+               }
+            figure {
+                width: 100%;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+            &__text {
+                padding: 0 0.2rem;
+                a {
+                    color: $black;
+                }
+                h1 {
+                    font-size: 1.3rem;
+                    cursor: pointer;
+                    &:hover {
+                        transition: 300ms;
+                        color: $wine;
+                    }
+                }
+            }
+        }
+    }
+}

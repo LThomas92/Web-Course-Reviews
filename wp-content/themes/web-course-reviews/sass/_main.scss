@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: $offWhite;
+  margin: 0 0 200px; /* bottom = footer height */
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $monserrat;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p, li, a, span, em {
+  font-family: $sans;
+}
+
+p {
+  font-size: 0.9rem;
+  letter-spacing: 0.12px;
+  line-height: 25px;
+  margin: 1.3rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-margins {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0.4rem 0.7rem;
+  background-color: $wine;
+  color: $offWhite;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+}

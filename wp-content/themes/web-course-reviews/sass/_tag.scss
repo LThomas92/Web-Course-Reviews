@@ -1,0 +1,106 @@
+body.tag {
+    background-color: $offWhite;
+    .archive-header {
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+        padding-bottom: 20px;
+        margin-top: 2rem;
+        .archive-title {
+            text-align: center;
+        }
+    } 
+}
+
+.tag-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    @media only screen and (max-width: 800px) {
+        margin: 0 2.5rem;
+        flex-direction: column;
+      }
+}
+
+.big-tag-block {
+    width: 70%;
+    display: flex;
+    margin-bottom: 0.9rem;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
+    figure {
+        width: 40%;
+        cursor: pointer;
+        @media only screen and (max-width: 800px) {
+           width: 50%;
+          }
+        img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            display: block;
+            &:hover {
+                transition: 300ms;
+                opacity: 0.9;
+            }
+        }
+    }
+    &__text {
+        width: 60%;
+        @media only screen and (max-width: 800px) {
+            width: 50%;
+          }
+        padding: 0 1rem;
+        a {
+            color: $black;
+        }
+        h1 {
+            &:hover {
+                transition: 300ms;
+                color: $wine;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.small-tag-block {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        margin: 1.2rem 0;
+      }
+    figure {
+        width: 100%;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            &:hover {
+                transition: 300ms;
+                opacity: 0.9;
+            }
+        }
+    }
+    &__text {
+        padding: 1rem;
+        background-color: $black;
+        h1 {
+            color: $offWhite;
+            font-size: 1.2rem;
+            &:hover {
+                color: $wine;
+                transition: 300ms;
+                cursor: pointer;
+            }
+        }
+        p {
+            color: $offWhite;
+        }
+    }
+}

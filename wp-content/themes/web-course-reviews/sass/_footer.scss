@@ -1,0 +1,30 @@
+.site-footer {
+    background-color: $grey;
+    #secondary-menu {
+        display: flex;
+        justify-content: center;
+        li a {
+            color: $black;
+            font-size: 1rem;
+            margin-top: 1.2rem;
+            margin-right: 2rem;
+            font-weight: 400;
+            display: block;  
+            &:hover {
+                transition: 300ms;
+                color: $wine;
+            }
+        }
+    }
+}
+
+.copyright-info {
+    p {
+        text-align: right;
+        display: block;
+        @media only screen and (max-width: 800px) {
+            padding-right: 2rem;
+          }
+    }
+}
+
